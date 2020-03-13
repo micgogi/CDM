@@ -1,0 +1,7 @@
+{
+    "/api/v1/newsservice/*":{
+        "target":"http://10.230.174.255/",
+        "secure":false,
+        "changeOrigin":true
+    }
+}

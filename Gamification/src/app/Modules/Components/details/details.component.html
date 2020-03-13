@@ -1,0 +1,373 @@
+<!-- <div class="container-fluid heading" style="color: white;"> -->
+
+  <!-- <h3>
+    <span class="text-center strong" style="color:white; font-family: Norms, Helvetica, Arial, sans-serif;
+        font-weight: bold;font-size: 30px;">
+      <span>Cognizant <sup><i class="fa fa-registered" style="font-size: 25%;"></i></sup>&nbsp;</span>
+    </span>
+    <span class="text-center" style="color:#00B140;font-family: Norms, Helvetica, Arial, sans-serif;
+        font-weight: bold">
+      <span>Digital Minister</span>
+    </span>
+  </h3> -->
+ 
+  <div class="text-center mt-1">
+      <!-- <h3>
+              <span class="text-center strong" style="color:white; font-family: Norms, Helvetica, Arial, sans-serif;
+              font-weight: bold;font-size: 30px;">
+                      <span>Cognizant <sup><i class="fa fa-registered" style="font-size: 25%;"></i></sup>&nbsp;</span>
+              </span>
+              <span class="text-center" style="color:#00B140;font-family: Norms, Helvetica, Arial, sans-serif;
+              font-weight: bold">
+                      <span>Digital Minister</span>
+              </span>
+      </h3> -->
+      <img style="height: 30px;width: 140px" src="assets/cognizant_logo.png"> 
+      &nbsp;
+      <img style="height: 35px;width: 190px;margin-bottom: 0.5%" src="assets/DigitalMinister2.png"> 
+
+
+</div>
+
+<!-- </div> -->
+
+<div class="col-12">
+  <div class="col-3" style="display: inline-block;"></div>
+  <!-- <h3 style="color: white;display: inline-block;font-family: Norms, Helvetica, Arial, sans-serif;
+  " *ngIf="status1"
+    class="largeview col-6 text-center">PARTY 1</h3>
+  <h3 style="color: white;display: inline-block;font-family: Norms, Helvetica, Arial, sans-serif;
+  " *ngIf="status2"
+    class="largeview col-6 text-center">PARTY 2</h3> -->
+  <div class="largeviewseat col-md-3 text-right" style="float:right;">
+
+    <button class="nav-btn" routerLink="/dashboard"> <strong>SEAT VIEW</strong></button>
+
+  </div>
+
+</div>
+<div class="mobileviewseat">
+  <div class=" col-md-3 text-center " style="display: inline-block;">
+    <button class="nav-btn" routerLink="/dashboard"> <strong>SEAT VIEW</strong></button>
+  </div>
+</div>
+
+
+
+<div class="row container-fluid mx-auto">
+
+  <div class="col-lg-3 card col-md-3 col-sm-12 col-xs-12 background-opacity" style="font-family: Norms, Helvetica, Arial, sans-serif;
+  font-weight: bold;">
+    <img class="card-img-top mt-2 " src="assets/Cogni.jpg" alt="Card image cap">
+    <div class="t-primary text-center"></div>
+    <span class="h5 t-secondary text-center"> {{constituency}}</span>
+    <button class="nav-btn text-center" [routerLink]="['/graph',constituency]">
+      <i class="fa fa-calendar" aria-hidden="true"></i> &nbsp;
+      <strong>TREND CHART</strong></button>
+    <hr>
+    <div class="btn-group btn-group-sm btn-size" role="group" aria-label="Basic example">
+      <button type="button" (click)="buttonStatus1()" [ngClass]="status1 ? 'btn btncolor-active' : 'btn btncolor-inactive'">
+        <i [ngClass]="status1 ? 'fa fa-crown': ''"></i> <strong>PARTY 1</strong></button>
+      <button type="button" (click)="buttonStatus2()" [ngClass]="status2 ? 'btn btncolor-active' : 'btn btncolor-inactive'">
+        <i [ngClass]="status2 ? 'fa fa-crown': ''"></i><strong>PARTY 2</strong></button>
+    </div>
+    <!-- <hr class="voter-count" *ngIf="status1">
+    <div class="voter-count" *ngIf="status1">
+
+      <tr class=" text-center">
+        <th scope="col">
+          <small class="t-primary">Male Voters</small>
+          <br>
+          <span class="h4 font-weight-light t-secondary">{{party1?.male}}</span>
+        </th>
+        <th class="split">
+          <small class="t-primary">Female Voters</small>
+          <br>
+          <span class="h4 font-weight-light t-secondary">{{party1?.female}}</span>
+        </th>
+
+      </tr>
+    </div>
+    <hr class="voter-count">
+    <div class="voter-count" *ngIf="status2">
+
+      <tr class=" text-center">
+        <th scope="col">
+          <small class="t-primary">Male Voters</small>
+          <br>
+          <span class="h4 font-weight-light t-secondary">{{party2?.male}}</span>
+        </th>
+        <th class="split">
+          <small class="t-primary">Female Voters</small>
+          <br>
+          <span class="h4 font-weight-light t-secondary">{{party2?.female}}</span>
+        </th>
+
+      </tr>
+    </div>
+    <hr class="voter-count" *ngIf="status2">
+    <div style="text-align:center;" class="largeview">
+      <small class="t-primary">Total Voters</small>
+      <br>
+      <span class="h4 font-weight-light t-secondary">{{totalVotes}}</span>
+    </div> -->
+
+
+    <div class="voter-count" class="largeview" style="font-family: Norms, Helvetica, Arial, sans-serif;
+    font-weight: bold;">
+      <tr class="text-center">
+        <th>
+          <small class="h6 t-primary"><strong>COUNCILLOR</strong></small>
+          <br>
+          <div class="party1-image text-left" *ngIf="status1">
+            <img src="assets/councillor_icon.png" class="largeview" alt="Councillor1" width="80" height="80">
+            <span class="font-weight-light t-secondary ml-4">Councillor 1</span>
+          </div>
+          <div class="party2-image text-left" *ngIf="status2">
+            <img src="assets/councillor_icon.png" class="largeview" alt="Councillor2" width="80" height="80">
+            <span class="font-weight-light t-secondary ml-4">Councillor 2</span>
+          </div>
+        </th>
+      </tr>
+    </div>
+
+    <hr class="voter-count">
+  </div>
+
+  <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 t-height t-content">
+    <div class="sticky">
+      <input type="text" style="color:#4c4c4c; font-weight: 900" class="form-control " name="searchString" placeholder="Enter Your Id or Name ..." [(ngModel)]="searchString">
+    </div>
+    <div>
+    <table class="table t-primary">
+      <thead class="table-head-background " style="font-family: Norms, Helvetica, Arial, sans-serif;
+      font-weight: bold;">
+        <tr>
+          <th scope="col"><strong>ASSOCIATE ID</strong></th>
+          <th scope="col"><strong>ASSOCIATE NAME</strong></th>
+          <th scope="col"><strong>STATUS</strong></th>
+        </tr>
+      </thead>
+      <tbody *ngIf="status1" class="table-body-background" style="font-family: Norms, Helvetica, Arial, sans-serif;">
+        <tr *ngFor="let member of party1?.members| arrayFilter:searchString">
+          <td style="padding-left:0px;padding-right: 0px;">{{member.associateId}}</td>
+          <td style="padding-left:2px;padding-right: 0px;margin: 0px">{{member.associateName}}</td>
+          <!-- <td><div class="progress" style="height: 10px;">
+            <div class="progress-bar bg-success" role="progressbar" [style.width]="member.finalStatus*100/20+'%'" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div></td> -->
+          <td>
+            <div id="dots">
+              <span class="dot" *ngFor="let length of [].constructor(+member.finalStatus)"></span>
+              <span class="dotgray" *ngFor="let length of [].constructor(20-(+member.finalStatus))"></span>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+      <tbody *ngIf="status2" class="table-body-background"  style="font-family: Norms, Helvetica, Arial, sans-serif;">
+        <tr *ngFor="let member of party2?.members| arrayFilter:searchString">
+          <td style="padding-left:0px;padding-right: 0px;">{{member.associateId}}</td>
+          <td style="padding-left:2px;padding-right: 0px;margin: 0px">{{member.associateName}}</td>
+          <!-- <td><div class="progress" style="height: 10px;">
+            <div class="progress-bar bg-success" role="progressbar" [style.width]="member.finalStatus*100/20+'%'" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div></td> -->
+          <td>
+            <div id="dots">
+              <span class="dot" *ngFor="let length of [].constructor(+member.finalStatus)"></span>
+              <span class="dotgray" *ngFor="let length of [].constructor(20-(+member.finalStatus))"></span>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  </div>
+  <div class="col-lg-3 card col-md-3 col-sm-12 col-xs-12 background-opacity mobileview">
+    <div class="t-primary" style="margin-top:30px;">
+      <strong style="font-size:20px;">CAMPAIGN NEWS</strong>
+    </div>
+  </div>
+  <div class="col-lg-3 card col-md-3 col-sm-12 col-xs-12 news-content-vertical t-news-height background-opacity" style="font-family: Norms, Helvetica, Arial, sans-serif;">
+
+    <!-- <img class="card-img-top mt-2 img-size" src="assets/campaign_news.jpeg" alt="Card image cap"> -->
+    <!-- <div class="card-title">dd</div> -->
+    <div class=" row card-header t-primary largeview text-center" style="background-color: #257FF5">
+      <span class="mx-auto">
+        <strong style="font-size: 20px;">CAMPAIGN NEWS</strong>
+      </span>
+    </div>
+    <div class="card-body news-content-vertical">
+      <div *ngFor="let n of news">
+         <div *ngIf="n?.type==='Video'" class=" news t-secondary">
+            
+            <a [attr.href]="n?.url" target="_blank" style="color:#FFA530"><strong>{{n?.title}}</strong></a>
+         
+
+
+
+        </div> 
+
+        <div class="news t-secondary" *ngIf="n?.type==='Image'" data-toggle="modal" data-target="#modalYT" (click)="showMe(n)">{{n?.title}}</div>
+
+
+        <div class="d-primary">{{n?.creationDate | date :'longDate'}}</div>
+        <!-- <div class="n-primary">{{n.description}}</div> -->
+        <hr>
+      </div>
+      <!-- <div class=" t-secondary">News Headline 1</div>
+      <div class="d-primary">Thu 4 apr 2019</div>
+      <div class="n-primary">lopsem jkvdf jjdffdn ndf jh jfdfh</div>
+      <hr>
+      <div class=" t-secondary">News Headline 1</div>
+      <div class="d-primary">Thu 4 apr 2019</div>
+      <div class="n-primary">lopsem jkvdf jjdffdn ndf jh jfdfh</div>
+      <hr>
+      <div class=" t-secondary">News Headline 1</div>
+      <div class="d-primary">Thu 4 apr 2019</div>
+      <div class="n-primary">lopsem jkvdf jjdffdn ndf jh jfdfh</div>
+      <hr> -->
+
+
+
+
+    </div>
+  </div>
+
+</div>
+
+
+
+<!-- <div class="modal fade" id="modalYT" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title text-center" id="myModalLabel">{{myNews?.title}}</h4>
+        <button type="button" data-dismiss="modal" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+
+      </div>
+      <div class="modal-body mb-0 p-0">
+
+        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+          <iframe class="embed-responsive-item" allow="autoplay"
+          src="https://cognizant.kpoint.com/kapsule/gcc-fb7a1464-d317-42db-abc8-7aedabd34060/v3/embedded?nv3Embed=1&msgToken=token_gcc-fb7a1464-d317-42db-abc8-7aedabd34060_1"
+            allowfullscreen></iframe>
+          <iframe class="embed-responsive-item" allow="autoplay" [src]="sanitizer.bypassSecurityTrustResourceUrl(myNews.url)"
+            allowfullscreen>
+          </iframe>
+ 
+
+        </div>
+
+      </div>
+      <div class="modal-footer justify-content-center flex-column flex-md-row">
+        <span class="mr-4">{{myNews?.description}}</span>
+      </div>
+
+    </div>
+
+  </div>
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="modal fade" *ngIf="myNews.type==='Video'" id="modalYT" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+
+    <div class="modal-content">
+      <div class="modal-header flex-md-row">
+        <span>
+          {{myNews?.title}}
+        </span>
+        <div>
+          <button type="button" (click)="close()" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"
+              aria-hidden="true"></i></button>
+        </div>
+
+      </div>
+
+
+      <div class="modal-body mb-0 p-0">
+
+  <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+
+  <!-- {{getUrl(myNews?.url)}} -->
+  <!-- <a href="https://www.youtube.com/embed/wRQK28ssgx4" target="_blank">Click me</a>  -->
+
+  <!-- <a data-bind="attr: { href: 'myNews?.url' , title: Title }, text: Title">xxx</a> -->
+
+   <iframe class="embed-responsive-item"  id="frame" [src]="getUrl(myNews?.url)" allowfullscreen></iframe>
+        </div> 
+
+      </div>
+
+      <div class="modal-footer justify-content-center flex-column flex-md-row">
+        <span class="mr-4">{{myNews?.description}}</span>
+
+
+      </div>
+
+
+
+    </div> 
+
+
+   </div> 
+
+
+
+</div>
+<div class="modal fade" *ngIf="myNews.type==='Image'" id="modalYT" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+
+    <div class="modal-content">
+      <div class="modal-header flex-md-row">
+        <span>
+         <strong style="color:rgb(49, 49, 49);font-family: Norms, Helvetica, Arial, sans-serif;"> {{myNews?.title}}</strong>
+        </span>
+        <div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"
+              aria-hidden="true"></i></button>
+        </div>
+
+      </div>
+
+
+      <div class="modal-body mb-0 p-0">
+
+        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+          <img class="embed-responsive-item" [src]="myNews.url" />
+        </div>
+
+      </div>
+
+      <div class="modal-footer justify-content-center flex-column flex-md-row">
+        <span class="mr-4">{{myNews?.description}}</span>
+
+
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+</div>
+<div class="footer">
+ 
+    <img src="assets/academy_logo.png" style="width:210px;height:26px;float:left;margin-top: 15px;">
+    <img src="assets/cde_logo.png" style="width:88px;height:26;float:right">
+  </div>

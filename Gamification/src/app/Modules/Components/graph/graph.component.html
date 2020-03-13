@@ -1,0 +1,39 @@
+<div>
+    <div class="text-center">
+                <!-- <h3>
+                                <span class="text-center strong" style="color:white; font-family: Norms, Helvetica, Arial, sans-serif;
+                                    font-weight: bold;font-size: 30px;">
+                                  <span>Cognizant <sup><i class="fa fa-registered" style="font-size: 25%;"></i></sup>&nbsp;</span>
+                                </span>
+                                <span class="text-center" style="color:#00B140;font-family: Norms, Helvetica, Arial, sans-serif;
+                                    font-weight: bold">
+                                  <span>Digital Minister</span>
+                                </span>
+                              </h3>
+                             -->
+                             <img style="height: 30px;width: 140px" src="assets/cognizant_logo.png"> 
+                             &nbsp;
+                             <img style="height: 35px;width: 190px;margin-bottom: 0.5%" src="assets/DigitalMinister2.png"> 
+             
+
+    </div>
+    <div class="text-right" style="margin-right:2%">
+        <button [routerLink]="['/details',constituency]" class="nav-btn">
+          <i class="fa fa-arrow-left" aria-hidden="true"></i>&nbsp;
+      <strong>GO BACK</strong></button>
+    </div>
+</div>
+
+<div class="text-center h2" style="color: white;">
+{{constituency}} <br>
+</div>
+
+<div class="mt-2" [style.height.px]="height" [style.width.px]="width" [style.margin]="margin">
+    <canvas id="dayWiseChart"></canvas>
+  </div>
+
+  <div class="footer">
+ 
+      <img src="assets/academy_logo.png" style="width:250px;height:30px;float:left;margin-top: 20px;">
+      <img src="assets/cde_logo.png" style="width:100px;height:50;float:right">
+    </div>

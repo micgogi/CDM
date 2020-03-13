@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css"; 
+@import "~font-awesome/css/font-awesome.min.css";
+@import '~fullpage.js/dist/fullpage.min.css';
+
+
+/* body{
+  background-color: #303030;
+}
+a{
+  color: white;
+}
+span{
+  color:white;
+} */
+
+body{
+  /* background-color: rgb(0, 51, 160);
+background: -webkit-linear-gradient(to bottom, rgb(0, 51, 160), rgb(4, 48, 143), rgb(6, 45, 131)); 
+background: linear-gradient(to right, rgb(6, 60, 175), rgb(4, 43, 126),rgb(0, 51, 160));  */
+background-image: url("assets/Background.png");
+background-size: cover;
+ background-repeat: no-repeat;
+font-family: Arial, sans-serif;
+height: 100%;
+overflow: auto;
+}
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+

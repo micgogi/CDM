@@ -1,0 +1,54 @@
+#graph{
+    margin: auto;
+}
+.nav-btn{
+    background-color: #00B140;
+    border: none;
+    color: white;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Norms, Helvetica, Arial, sans-serif;
+    border-radius: 3%;
+  }
+  .nav-btn:hover{
+    background-color: #007E2E;
+    border: none;
+    color: white;
+    padding: 5px 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Norms, Helvetica, Arial, sans-serif;
+    border-radius: 3%;
+  }
+
+  @media screen and (max-width: 600px) { 
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+     }
+    }
+@media screen and (min-width: 600px) { 
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+
+    }
+     
+        }

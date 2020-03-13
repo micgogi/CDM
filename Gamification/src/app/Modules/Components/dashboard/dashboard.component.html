@@ -1,0 +1,498 @@
+<ngx-spinner bdOpacity=1.0 size="default" color="#black" type="timer" [fullScreen]="true">
+        <p style="color: white"> Loading... </p>
+</ngx-spinner>
+<div>
+        <div class="text-center mt-1">
+                <!-- <h3>
+                        <span class="text-center strong" style="color:white; font-family: Norms, Helvetica, Arial, sans-serif;
+                        font-weight: bold;font-size: 30px;">
+                                <span>Cognizant <sup><i class="fa fa-registered" style="font-size: 25%;"></i></sup>&nbsp;</span>
+                        </span>
+                        <span class="text-center" style="color:#00B140;font-family: Norms, Helvetica, Arial, sans-serif;
+                        font-weight: bold">
+                                <span>Digital Minister</span>
+                        </span>
+                </h3> -->
+                <img style="height: 30px;width: 140px" src="assets/cognizant_logo.png"> 
+                &nbsp;
+                <img style="height: 35px;width: 190px;margin-bottom: 0.5%" src="assets/DigitalMinister2.png"> 
+
+
+        </div>
+        <!-- <div>
+                <img src="assets/cde_logo.png" style="height: 40px; width: 100px;">
+        </div> -->
+        <div class="text-right" style="margin-right: 2%">
+                <button routerLink="/map" class="nav-btn text-right" style="width:256px;"> <strong style="margin-right: 30px;">CONSTITUENCY MAP</strong></button>
+        </div>
+        <div class="text-right" style="margin-right: 2%">
+                <button class="nav-btn text-right" data-toggle="modal" data-target="#modalYT">
+                        <strong style="">KNOW YOUR CONSTITUENCY</strong></button>
+        </div>
+
+</div>
+
+
+<div class="seats offset-md-2 col-md-8 col-xs-12 col-sm-10 mx-auto" *ngIf="hide">
+
+        <div class="row row1">
+                <div class="c01" style="margin-left:5%;margin-top: 12%;  transform: rotate(-30deg);">
+                        <a [routerLink]="['/details',result[Constituency[0]]?.constituency]"><img [src]="result[Constituency[0]]?.imageUrl"
+                                        (mouseenter)="show($event,result[Constituency[0]].constituency)" (mouseleave)="changeText=false" /></a>
+                </div>
+                <div class="c1" style="margin-left:2%;margin-top: 8.5%;transform: rotate(-25deg);">
+                        <a [routerLink]="['/details',result[Constituency[1]]?.constituency]">
+                                <img [src]="result[Constituency[1]]?.imageUrl" (mouseover)="show($event,result[Constituency[1]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c0" style="margin-left:2%;margin-top: 6%;transform: rotate(-20deg);">
+                        <a [routerLink]="['/details',result[Constituency[2]]?.constituency]">
+                                <img [src]="result[Constituency[2]]?.imageUrl" (mouseover)="show($event,result[Constituency[2]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c0" style="margin-left:2%;margin-top: 3.5%;transform: rotate(-15deg);">
+                        <a [routerLink]="['/details',result[Constituency[3]]?.constituency]">
+                                <img [src]="result[Constituency[3]]?.imageUrl" (mouseover)="show($event,result[Constituency[3]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c0" style="margin-left:2%;margin-top: 2%;transform: rotate(-10deg);">
+                        <a [routerLink]="['/details',result[Constituency[4]]?.constituency]">
+                                <img [src]="result[Constituency[4]]?.imageUrl" (mouseover)="show($event,result[Constituency[4]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c0" style="margin-left:2%;margin-top: 1%;transform: rotate(-5deg);">
+                        <a [routerLink]="['/details',result[Constituency[5]]?.constituency]">
+                                <img [src]="result[Constituency[5]]?.imageUrl" (mouseover)="show($event,result[Constituency[5]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c0" style="margin-left:2%;margin-top: 1%;transform: rotate(5deg);">
+                        <a [routerLink]="['/details',result[Constituency[34]]?.constituency]">
+                                <img [src]="result[Constituency[34]]?.imageUrl" (mouseover)="show($event,result[Constituency[34]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c0" style="margin-left:2%;margin-top: 2%;transform: rotate(10deg);">
+                        <a [routerLink]="['/details',result[Constituency[35]]?.constituency]">
+                                <img [src]="result[Constituency[35]]?.imageUrl" (mouseover)="show($event,result[Constituency[35]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c0" style="margin-left:2%;margin-top: 3.5%;transform: rotate(15deg);">
+                        <a [routerLink]="['/details',result[Constituency[36]]?.constituency]">
+                                <img [src]="result[Constituency[36]]?.imageUrl" (mouseover)="show($event,result[Constituency[36]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c0" style="margin-left:2.2%;margin-top: 5.5%;transform: rotate(20deg);">
+                        <a [routerLink]="['/details',result[Constituency[37]]?.constituency]">
+                                <img [src]="result[Constituency[37]]?.imageUrl" (mouseover)="show($event,result[Constituency[37]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c0" style="margin-left:2.5%;margin-top: 9%;transform: rotate(25deg);">
+                        <a [routerLink]="['/details',result[Constituency[38]]?.constituency]">
+                                <img [src]="result[Constituency[38]]?.imageUrl" (mouseover)="show($event,result[Constituency[38]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c0" style="margin-left:2.5%;margin-top: 13%;transform: rotate(30deg);">
+                        <a [routerLink]="['/details',result[Constituency[39]]?.constituency]">
+                                <img [src]="result[Constituency[39]]?.imageUrl" (mouseover)="show($event,result[Constituency[39]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+        </div>
+
+        <div class="row row2" style="">
+
+                <div class="c11" style="margin-left:12%; margin-top: 7.5%;transform: rotate(-30deg);">
+                        <a [routerLink]="['/details',result[Constituency[6]]?.constituency]">
+                                <img [src]="result[Constituency[6]]?.imageUrl" (mouseover)="show($event,result[Constituency[6]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c1" style="margin-left:2%;margin-top: 4.5%;transform: rotate(-25deg);">
+                        <a [routerLink]="['/details',result[Constituency[7]]?.constituency]">
+                                <img [src]="result[Constituency[7]]?.imageUrl" (mouseover)="show($event,result[Constituency[7]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c1" style="margin-left:2%;margin-top: 2.5%;transform: rotate(-15deg);">
+                        <a [routerLink]="['/details',result[Constituency[8]]?.constituency]">
+                                <img [src]="result[Constituency[8]]?.imageUrl" (mouseover)="show($event,result[Constituency[8]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c1" style="margin-left:2%;margin-top: 1%;transform: rotate(-10deg);">
+                        <a [routerLink]="['/details',result[Constituency[9]]?.constituency]">
+                                <img [src]="result[Constituency[9]]?.imageUrl" (mouseover)="show($event,result[Constituency[9]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c1" style="margin-left:2%;margin-top: 0%;transform: rotate(-5deg);">
+                        <a [routerLink]="['/details',result[Constituency[10]]?.constituency]">
+                                <img [src]="result[Constituency[10]]?.imageUrl" (mouseover)="show($event,result[Constituency[10]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c1" style="margin-left:2%;margin-top: 0%;transform: rotate(5deg);">
+                        <a [routerLink]="['/details',result[Constituency[29]]?.constituency]">
+                                <img [src]="result[Constituency[29]]?.imageUrl" (mouseover)="show($event,result[Constituency[29]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c1" style="margin-left:2%;margin-top: 1%;transform: rotate(10deg);">
+                        <a [routerLink]="['/details',result[Constituency[30]]?.constituency]">
+                                <img [src]="result[Constituency[30]]?.imageUrl" (mouseover)="show($event,result[Constituency[30]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c1" style="margin-left:2%;margin-top: 2.5%;transform: rotate(15deg);">
+                        <a [routerLink]="['/details',result[Constituency[31]]?.constituency]">
+                                <img [src]="result[Constituency[31]]?.imageUrl" (mouseover)="show($event,result[Constituency[31]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c1" style="margin-left:2%;margin-top: 4.5%;transform: rotate(20deg);">
+                        <a [routerLink]="['/details',result[Constituency[32]]?.constituency]">
+                                <img [src]="result[Constituency[32]]?.imageUrl" (mouseover)="show($event,result[Constituency[32]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c1" style="margin-left:2%;margin-top: 7.5%;transform: rotate(30deg);">
+                        <a [routerLink]="['/details',result[Constituency[33]]?.constituency]">
+                                <img [src]="result[Constituency[33]]?.imageUrl" (mouseover)="show($event,result[Constituency[33]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+        </div>
+
+
+        <div class="row row3" style="">
+
+                <div class="c21" style="margin-left:19%;margin-top: 6%;transform: rotate(-30deg);">
+                        <a [routerLink]="['/details',result[Constituency[11]]?.constituency]">
+                                <img [src]="result[Constituency[11]]?.imageUrl" (mouseover)="show($event,result[Constituency[11]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c2" style="margin-left:2%;margin-top: 3%;transform: rotate(-20deg);">
+                        <a [routerLink]="['/details',result[Constituency[12]]?.constituency]">
+                                <img [src]="result[Constituency[12]]?.imageUrl" (mouseover)="show($event,result[Constituency[12]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c2" style="margin-left:2%;margin-top: 1%;transform: rotate(-10deg);">
+                        <a [routerLink]="['/details',result[Constituency[13]]?.constituency]">
+                                <img [src]="result[Constituency[13]]?.imageUrl" (mouseover)="show($event,result[Constituency[13]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c2" style="margin-left:2%;margin-top: 0%;transform: rotate(-5deg);">
+                        <a [routerLink]="['/details',result[Constituency[14]]?.constituency]">
+                                <img [src]="result[Constituency[14]]?.imageUrl" (mouseover)="show($event,result[Constituency[14]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c3" style="margin-left:2%;margin-top: 0%;transform: rotate(5deg);">
+                        <a [routerLink]="['/details',result[Constituency[25]]?.constituency]">
+                                <img [src]="result[Constituency[25]]?.imageUrl" (mouseover)="show($event,result[Constituency[25]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c3" style="margin-left:2%;margin-top: 1%;transform: rotate(10deg);">
+                        <a [routerLink]="['/details',result[Constituency[26]]?.constituency]">
+                                <img [src]="result[Constituency[26]]?.imageUrl" (mouseover)="show($event,result[Constituency[26]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c3" style="margin-left:2%;margin-top: 3%;transform: rotate(20deg);">
+                        <a [routerLink]="['/details',result[Constituency[27]]?.constituency]">
+                                <img [src]="result[Constituency[27]]?.imageUrl" (mouseover)="show($event,result[Constituency[27]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c2" style="margin-left:2%;margin-top: 6%;transform: rotate(30deg);">
+                        <a [routerLink]="['/details',result[Constituency[28]]?.constituency]">
+                                <img [src]="result[Constituency[28]]?.imageUrl" (mouseover)="show($event,result[Constituency[28]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+
+        </div>
+        <div class="row row4" style="">
+
+                <div class="c31" style="margin-left:26.5%;margin-top: 5%;transform: rotate(-30deg);">
+                        <a [routerLink]="['/details',result[Constituency[15]]?.constituency]">
+                                <img [src]="result[Constituency[15]]?.imageUrl" (mouseover)="show($event,result[Constituency[15]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c3" style="margin-left:2%;margin-top: 2%;transform: rotate(-20deg);">
+                        <a [routerLink]="['/details',result[Constituency[16]]?.constituency]">
+                                <img [src]="result[Constituency[16]]?.imageUrl" (mouseover)="show($event,result[Constituency[16]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c3" style="margin-left:2%;margin-top: 0%;transform: rotate(-5deg);">
+                        <a [routerLink]="['/details',result[Constituency[17]]?.constituency]">
+                                <img [src]="result[Constituency[17]]?.imageUrl" (mouseover)="show($event,result[Constituency[17]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c3" style="margin-left:2%;margin-top: 0%;transform: rotate(5deg);">
+                        <a [routerLink]="['/details',result[Constituency[22]]?.constituency]">
+                                <img [src]="result[Constituency[22]]?.imageUrl" (mouseover)="show($event,result[Constituency[22]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c4" style="margin-left:2%;margin-top: 2%;transform: rotate(20deg);">
+                        <a [routerLink]="['/details',result[Constituency[23]]?.constituency]">
+                                <img [src]="result[Constituency[23]]?.imageUrl" (mouseover)="show($event,result[Constituency[23]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c4" style="margin-left:2%;margin-top: 5%;transform: rotate(30deg);">
+                        <a [routerLink]="['/details',result[Constituency[24]]?.constituency]">
+                                <img [src]="result[Constituency[24]]?.imageUrl" (mouseover)="show($event,result[Constituency[24]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+
+        </div>
+
+
+        <div class="row row5" style="">
+
+                <div class="c41" style="margin-left:34%;margin-top: 5%;transform: rotate(-25deg);">
+                        <a [routerLink]="['/details',result[Constituency[18]]?.constituency]">
+                                <img [src]="result[Constituency[18]]?.imageUrl" (mouseover)="show($event,result[Constituency[18]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c4" style="margin-left:2%;margin-top: 3%;transform: rotate(-10deg);">
+                        <a [routerLink]="['/details',result[Constituency[19]]?.constituency]">
+                                <img [src]="result[Constituency[19]]?.imageUrl" (mouseover)="show($event,result[Constituency[19]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c4" style="margin-left:2%;margin-top: 3%;transform: rotate(10deg);">
+                        <a [routerLink]="['/details',result[Constituency[20]]?.constituency]">
+                                <img [src]="result[Constituency[20]]?.imageUrl" (mouseover)="show($event,result[Constituency[20]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+                <div class="c4" style="margin-left:2%;margin-top: 5%;transform: rotate(25deg);">
+                        <a [routerLink]="['/details',result[Constituency[21]]?.constituency]">
+                                <img [src]="result[Constituency[21]]?.imageUrl" (mouseover)="show($event,result[Constituency[21]].constituency)"
+                                        (mouseout)="changeText=false" /></a>
+                </div>
+
+
+        </div>
+</div>
+<div class="row col largeview" style="margin-top:25px;font-family: Norms, Helvetica, Arial, sans-serif;">
+        <div class="col-2"></div>
+        <div class="col-8 text-center" style="color:aliceblue;margin-top:30px;" *ngIf="hide">
+                <ul style="font-weight: 200">
+                        <li><span class="mr-2"> <img src="assets/Party 1lead.svg" style="width:16px;height:19px" />&nbsp;
+                                        <strong>Party1 leading </strong> </span></li>
+
+                        <li><span class="mx-2"> <img src="assets/Party 2lead.svg" style="width:16px;height:19px " />&nbsp;
+                                        <strong>Party2 leading</strong></span></li>
+
+                        <li><span class="mx-2"> <img src="assets/Party 1win.svg" style="width:16px;height:19px;" />&nbsp;
+                                        <strong>Party1 won</strong> </span></li>
+
+                        <li><span class="mx-2"> <img src="assets/Party 2win.svg" style="width:16px;height:19px;" />&nbsp;
+                                        <strong>Party2 won</strong></span></li>
+
+                        <li><span class="mx-2"> <img src="assets/Drawn.svg" style="width:16px;height:19px;" /><strong>&nbsp;
+                                                Draw</strong> </span></li>
+
+                        <li><span class="mx-2"><img src="assets/No_Result.svg" style="width:16px;height:19px;" />&nbsp;
+                                        <strong> No
+                                                result</strong></span></li>
+                </ul>
+        </div>
+        <div class="col-2"></div>
+
+</div>
+
+
+<div class="mobileview">
+        <div class="text-center" style="color:aliceblue;margin-top:30px;font-family: Norms, Helvetica, Arial, sans-serif;"
+                *ngIf="hide">
+                <ul style="font-weight: bold">
+                        <li><span class="mr-0"> <img src="assets/Party 1lead.svg" style="width:16px;height:19px" />
+                                        Party1leading</span>
+                                <span class="mr-0"> <img src="assets/Party 2lead.svg" style="width:16px;height:19px " />
+                                        Party2leading</span></li>
+                        <li><span class="mr-0"> <img src="assets/Party 1win.svg" style="width:16px;height:19px;" />
+                                        Party1 won</span>
+                                <span class="mr-0"> <img src="assets/Party 2win.svg" style="width:16px;height:19px;" />
+                                        Party2 won</span></li>
+                        <li><span class="mr-0"> <img src="assets/Drawn.svg" style="width:16px;height:19px;" /> Draw</span>
+                                <span class="mr-0"><img src="assets/No_Result.svg" style="width:16px;height:19px;" />
+                                        No
+                                        result</span></li>
+                </ul>
+        </div>
+</div>
+
+
+<div *ngIf="changeText" [style.top.px]="top" class="right" [style.left.px]="left">
+        <div class="card" style="width:13rem;font-family: Norms, Helvetica, Arial, sans-serif;">
+                <div class="card-header">
+                        <strong>{{selectedConstituency}}</strong>
+                </div>
+                <ul class="list-group list-group-flush">
+                        <!-- <li class="list-group-item">Total Votes:{{totalVotes}}</li> -->
+                        <li class="list-group-item" style="padding: 4px">Party1: <strong>{{party1Votes}} votes</strong>
+                                &nbsp;&nbsp;
+                                <span *ngIf="(party1Votes-party2Votes)>0 && party1Votes!=0 && ((party1Votes)!=totalVotes/2) && party1Votes<totalVotes/2 "
+                                        class="ml-3">
+                                        <button class="btn1-outline-success"> <strong>LEADING</strong> </button>
+                                </span>
+                                <span *ngIf=" (party1Votes>=totalVotes/2)"
+                                                class="ml-3">
+                                                <button class="btn1-outline-success"> <strong>WON</strong> </button>
+                                        </span>
+                        </li>
+                        <li class="list-group-item" style="padding: 4px">Party2: <strong>{{party2Votes}} votes</strong>
+
+                                &nbsp;&nbsp;
+                                <span *ngIf="(party2Votes-party1Votes)>0 && party2Votes!=0 && ((party2Votes)!=totalVotes/2&& party2Votes<totalVotes/2 )"
+                                        class="ml-3">
+                                        <button class="btn2-outline-success"> <strong>LEADING</strong> </button>
+                                </span>
+                                <span *ngIf=" (party2Votes>=totalVotes/2)"
+                                class="ml-3">
+                                <button class="btn1-outline-success"> <strong>WON</strong> </button>
+                        </span>
+                        </li>
+                </ul>
+                <div class="card-footer text-muted" style="padding: 4px">
+                        Click to view details
+                </div>
+                <i></i>
+        </div>
+</div>
+
+
+
+
+
+
+
+
+<!-- <div class="modal fade"  id="modalYT" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+   *ngIf="hide">
+  <div class="modal-dialog modal-lg" role="document">
+
+    <div class="modal-content">
+      <div class="modal-header flex-md-row">
+        <span>
+           <input type="text" class="form-control " #assocId  name="searchString" placeholder="Type Your Id or Name" [(ngModel)]="searchString">
+           <button (click)="getDetail(assocId.value)">Search</button>
+         
+        </span>
+        <div>
+          <button type="button" (click)="close()" class="close" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"
+              aria-hidden="true"></i></button>
+        </div>
+
+      </div>
+
+
+      <div class="modal-body mb-0 p-0">
+
+        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half"> 
+
+          {{getUrl(myNews?.url)}}
+        
+          
+           <iframe class="embed-responsive-item"  id="frame" [src]="getUrl(myNews?.url)" allowfullscreen></iframe>
+        </div>
+
+      </div>
+
+      <div class="modal-footer justify-content-center flex-column flex-md-row">
+        <span class="mr-4">{{myNews?.description}}</span>
+
+
+      </div>
+
+
+
+    </div>
+
+
+  </div>
+</div> -->
+<div class="modal" id="modalYT" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                        <div class="modal-header">
+                                       
+                                                  
+                          <!-- <div class=" col input-group"> 
+                                        <input id="input" [(ngModel)]="textValue" type="text" (keyup.enter)="getDetail(assocId.value)"
+                                                class="form-control" #assocId placeholder="Enter Your Id" [(ngModel)]="searchString">
+                                        <div class="input-group-btn">
+                                         <button  class="nav-btn" (click)="getDetail(assocId.value)">Search</button>
+                                        </div> 
+                            </div>
+                         -->
+                         <div class="input-group mb-3">
+                                        <input id="input" style="width:80%; padding-left: 15px; color:#4c4c4c; font-weight: 900" [(ngModel)]="textValue" type="text" (keyup.enter)="getDetail(assocId.value)"
+                                       class="placeholderStyle" #assocId placeholder="Enter your id ..." [(ngModel)]="searchString">
+                                        <div class="input-group-append">
+                                                
+                                         <a (click)="getDetail(assocId.value)"><span class="input-group-text" style="background-color:#00B140; color
+                                         :white; border-radius: 0;" id="basic-addon2"><strong><i class="fa fa-search" aria-hidden="true"></i></strong></span></a>
+                                        </div>
+                                      </div>
+                                <button type="button" class="close" (click)="close()" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                </button>
+                        </div>
+                        <div class="modal-body" *ngIf="showModal">
+                                       <!-- <b>Hi {{kyc[1].split(',')[0]}},</b> -->
+                                       
+                                <table class="table table-borderless">
+                                        <thead>
+                                                <tr scope="row">
+                                                        <th>
+                                                                <strong>Hi {{kyc[1].split(',')[0]}},</strong>
+                                                        </th>
+                                                </tr>
+                                                        
+                                                <tr scope="row">
+                                                        <th>
+                                                                Your Constituency :
+                                                        </th>
+                                                        <th>
+                                                                {{kyc[2]}}
+                                                        </th>
+                                                </tr>
+                                                <tr scope="row">
+                                                        <th>
+                                                                Your Party :
+                                                        </th>
+                                                        <th>
+                                                                {{kyc[3]}}
+                                                        </th>
+                                                </tr>
+                                                <tr scope="row">
+                                                        <!-- <th>
+                                                                Your Progress :
+                                                        </th>
+                                                        <th>
+                                                                {{kyc[4]}} %
+                                                        </th> -->
+                                                        <th>
+                                                        <strong>You have completed {{kyc[4]}}% of courses</strong>
+                                                        </th>
+                                                        <th>
+                                                                      
+                                                        </th>
+                                                </tr>
+                                                <!-- <tr scope="row">
+                                                                <button [routerLink]="['/details', result[kyc[2]]?.constituency]" class="close nav-btn" (click)="close()" data-dismiss="modal" aria-label="Close">
+                                                                        <span aria-hidden="true">Go</span>
+                                                                </button>
+                                                </tr> -->
+                                        </thead>
+                                </table>
+
+                        </div>
+                        <div class="modal-footer" *ngIf="showModal">
+                                        <a [routerLink]="['/details', result[kyc[2]]?.constituency]"  (click)="close()" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true" class="nav-btn" style="font-weight: bold" >CONSTITUENCY DETAILS</span>
+                                        </a>
+                        </div>
+
+                        <div class="modal-body" *ngIf="!showModal" style="color:#D9534F">
+                                <strong>{{errorMsg}}</strong>
+                        </div>
+                        
+                        <!-- <button [routerLink]="['/details', result[kyc[2]]?.constituency]" class="close" (click)="close()" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">Go</span>
+                        </button> -->
+                </div>
+        </div>
+</div>
+
+<div class="footer">
+ 
+                <img src="assets/academy_logo.png" style="width:210px;height:26px;float:left;margin-top: 20px;">
+                <img src="assets/cde_logo.png" style="width:100px;height:50;float:right">
+              </div>

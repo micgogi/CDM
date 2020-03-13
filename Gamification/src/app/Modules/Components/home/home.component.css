@@ -1,0 +1,64 @@
+.c-top{
+    margin-top:20vh;
+}
+.c-top-button{
+    margin-top:12vh;
+}
+
+ @media screen and (max-width: 600px) { 
+    .largeview{
+        display: none;
+     } 
+    }
+@media screen and (min-width: 600px) { 
+        .mobileview{
+            display: none;
+         } 
+        }
+
+
+        .btn-outline-success{
+        
+            border-radius: 22.5px;
+            }
+            .btn-outline-success:hover{
+                color: #00B140;
+                border-radius: 22.5px;
+                }
+            .btn-round{
+               
+            border-radius: 17px;
+            }
+            .btn-round-sm{
+                
+            border-radius: 15px;
+            }
+            .btn-round-xs{
+          
+            border-radius: 11px;
+            padding-left: 10px;
+            padding-right: 10px;
+            }
+            @media screen and (max-width: 600px) { 
+                .footer {
+                    position: fixed;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    color: white;
+                    text-align: center;
+                 }
+                }
+            @media screen and (min-width: 600px) { 
+                .footer {
+                    position: fixed;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    color: white;
+                    text-align: center;
+ 
+                }
+                 
+                    }
+

@@ -1,0 +1,152 @@
+
+    .testclass{
+        background-color: #00B140;
+        border:none;
+        color:white;
+        padding: 8px 20px;
+        text-align:center;
+        display:inline-block;
+        font-size:16px;
+        margin:4px 2px;
+        cursor:pointer;
+        font-family: Arial;
+        border-radius: 4%;
+        width:90px;
+      }
+    .testclass:hover{
+        background-color: #007E2E;
+        border:none;
+
+    }
+
+
+    /* */
+
+.c-top{
+    margin-top:35vh;
+}
+.c-top-button{
+    margin-top:15vh;
+}
+
+@media screen and (max-width: 992px) { 
+    .largeViewButtom{
+        display: none;
+     } 
+    }
+@media screen and (min-width: 992px) { 
+        .mobileViewButtom{
+            display: none;
+         } 
+        }
+
+ @media screen and (max-width: 600px) { 
+    .largeview{
+        display: none;
+     } 
+    }
+@media screen and (min-width: 600px) { 
+        .mobileview{
+            display: none;
+         } 
+        }
+
+
+        .btn-outline-success{
+        
+            border-radius: 22.5px;
+            }
+            .btn-round{
+               
+            border-radius: 17px;
+            }
+            .btn-round-sm{
+                
+            border-radius: 15px;
+            }
+            .btn-round-xs{
+          
+            border-radius: 11px;
+            padding-left: 10px;
+            padding-right: 10px;
+            }
+            @media screen and (max-width: 600px) { 
+                .footer{
+                   margin-top: 10%;
+                 } 
+                }
+            @media screen and (min-width: 600px) { 
+                    .footer{
+                        padding-top: 11%;
+                     }
+                    }
+
+                    .spacing{
+                        padding-left:4%;
+                        padding-right:4% ; 
+                    }
+                    .container{
+                        width:60%;
+                    }
+.position{
+    text-align:center;
+}
+
+
+@media screen and (min-width:767px){
+    .mobile-view{
+        display:none;
+    }
+}
+
+
+.spacer{
+    flex:auto;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+ 
+ #style-4::-webkit-scrollbar-track
+{
+    background-color: #ffffff;
+}
+#style-4::-webkit-scrollbar
+{
+    width: 6px;
+    
+	background-color:  #ffffff;
+}
+
+#style-4::-webkit-scrollbar-thumb
+{
+    background-color:  #B2E7C5;
+    border-radius: 10px;
+	
+}
+
+@media screen and (min-width:600px){
+    .footer{
+     /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width:100%;
+    color: white;
+    text-align: center;
+    }
+}
+@media screen and (max-width:600px){
+    .footer{
+        /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width:100%;
+    color: white;
+    text-align: center;
+    }
+}
+
+.colorchange:hover{color: #00B140;
+}
