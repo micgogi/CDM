@@ -17,7 +17,7 @@ export class GameService {
     // this.councilorEndPoint = 'http://10.230.179.10:8090/api/v1/councilorservice';
     
     //server
-    this.serverEndPoint = 'http://52.66.140.154:8082/api/v1/digitalservice';  
+    this.serverEndPoint = '172.31.35.128:8082/api/v1/digitalservice';  
     //this.newsEndPoint = 'http://10.142.198.11:80/AdminService/api/v1/newsservice';
     //this.councilorEndPoint = 'http://10.142.198.11:80/AdminService/api/v1/councilorservice';
   }
