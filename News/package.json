@@ -22,7 +22,7 @@
     "bootstrap": "^4.3.1",
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
-    "jquery": "^3.4.0",
+    "jquery": "^3.5.0",
     "mdbootstrap": "^4.7.6",
     "ngx-bootstrap": "^4.0.1",
     "rxjs": "~6.3.3",
