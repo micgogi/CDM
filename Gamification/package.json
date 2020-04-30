@@ -30,7 +30,7 @@
     "core-js": "^2.5.4",
     "font-awesome": "^4.7.0",
     "fullpage.js": "^3.0.4",
-    "jquery": "^3.4.0",
+    "jquery": "^3.5.0",
     "mdbootstrap": "^4.8.8",
     "ng2-charts": "^2.0.3",
     "ng2-tooltip-directive": "^2.1.9",
