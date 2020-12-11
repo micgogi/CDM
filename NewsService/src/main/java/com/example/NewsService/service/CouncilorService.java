@@ -1,11 +1,10 @@
 package com.example.NewsService.service;
 
+import com.example.NewsService.entity.Councilor;
 import java.util.List;
 
-import com.example.NewsService.entity.Councilor;
-
 public interface CouncilorService {
-	public boolean addCouncilor(Councilor councilor);
-	
-	public List<Councilor> getCouncilorDetails(String constituency);
+  public boolean addCouncilor(Councilor councilor);
+
+  public List<Councilor> getCouncilorDetails(String constituency);
 }

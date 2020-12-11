@@ -8,47 +8,47 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="winners")
+@Table(name = "winners")
 public class Winners {
-	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	private int id;
-	
-	@Column(name="constituency_name")
-	private String constituencyName;
-	
-	@Column(name="winner")
-	private String winner;
+  @Id
+  @GeneratedValue(strategy = GenerationType.AUTO)
+  private int id;
 
-	public Winners(String constituencyName, String winner) {
-		super();
-		this.constituencyName = constituencyName;
-		this.winner = winner;
-	}
-	
-	public Winners() {}
-	public int getId() {
-		return id;
-	}
+  @Column(name = "constituency_name")
+  private String constituencyName;
 
-	public void setId(int id) {
-		this.id = id;
-	}
+  @Column(name = "winner")
+  private String winner;
 
-	public String getConstituencyName() {
-		return constituencyName;
-	}
+  public Winners(String constituencyName, String winner) {
+    super();
+    this.constituencyName = constituencyName;
+    this.winner = winner;
+  }
 
-	public void setConstituencyName(String constituencyName) {
-		this.constituencyName = constituencyName;
-	}
+  public Winners() {}
 
-	public String getWinner() {
-		return winner;
-	}
+  public int getId() {
+    return id;
+  }
 
-	public void setWinner(String winner) {
-		this.winner = winner;
-	}
-	
+  public void setId(int id) {
+    this.id = id;
+  }
+
+  public String getConstituencyName() {
+    return constituencyName;
+  }
+
+  public void setConstituencyName(String constituencyName) {
+    this.constituencyName = constituencyName;
+  }
+
+  public String getWinner() {
+    return winner;
+  }
+
+  public void setWinner(String winner) {
+    this.winner = winner;
+  }
 }

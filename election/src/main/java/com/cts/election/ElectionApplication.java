@@ -9,28 +9,26 @@ import org.springframework.boot.web.servlet.support.SpringBootServletInitializer
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.event.EventListener;
 
-
 @SpringBootApplication
-public class ElectionApplication extends SpringBootServletInitializer{
-	@Autowired
-	private Reader reader;
-	
-	public static void main(String[] args) {
-		
-		ApplicationContext applicationContext=SpringApplication.run(ElectionApplication.class, args);
-//		Reader reader=applicationContext.getBean(Reader.class);
-//		reader.read();
-		
-	}
-	
-	@EventListener(ApplicationReadyEvent.class)
-	public void doSomethingAfterStartup() {
-	    reader.read();
-	}
+public class ElectionApplication extends SpringBootServletInitializer {
+  @Autowired private Reader reader;
 
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
-		// TODO Auto-generated method stub
-		return builder.sources(ElectionApplication.class);
-	}
+  public static void main(String[] args) {
+
+    ApplicationContext applicationContext = SpringApplication.run(ElectionApplication.class, args);
+    //		Reader reader=applicationContext.getBean(Reader.class);
+    //		reader.read();
+
+  }
+
+  @EventListener(ApplicationReadyEvent.class)
+  public void doSomethingAfterStartup() {
+    reader.read();
+  }
+
+  @Override
+  protected SpringApplicationBuilder configure(SpringApplicationBuilder builder) {
+    // TODO Auto-generated method stub
+    return builder.sources(ElectionApplication.class);
+  }
 }
