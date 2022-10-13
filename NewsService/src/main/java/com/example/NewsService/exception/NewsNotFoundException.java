@@ -1,6 +1,5 @@
 package com.example.NewsService.exception;
 
-
 public class NewsNotFoundException extends RuntimeException {
   private String message;
 
