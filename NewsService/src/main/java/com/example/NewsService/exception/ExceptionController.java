@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RestControllerAdvice;
 @RestControllerAdvice
 public class ExceptionController {
 
-	@ExceptionHandler(value = {NewsNotFoundException.class})
-	public ResponseEntity<String> newsNotFoundException(NewsNotFoundException e) {
-		return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
-	}
+  @ExceptionHandler(value = {NewsNotFoundException.class})
+  public ResponseEntity<String> newsNotFoundException(NewsNotFoundException e) {
+    return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
+  }
 }
